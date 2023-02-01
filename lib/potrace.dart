@@ -261,9 +261,9 @@ class _BitmapToPathlist {
   List<_Path> run() {
     List<_Path> pathlist = <_Path>[];
 
-    _Point? currentPoint = findNext(_Point());
-    while (currentPoint != null) {
-      _Path path = findPath(currentPoint);
+    _Point? currentPoint = _Point();
+    while ((currentPoint = findNext(currentPoint!)) != null) {
+      _Path path = findPath(currentPoint!);
       xorPath(path);
 
       if (path.area > turdsize) pathlist.add(path);
