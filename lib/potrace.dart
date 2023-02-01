@@ -72,10 +72,12 @@ class _Bitmap {
   _Bitmap.fromData(this.w, this.h, this.data) : size=w*h;
 
   _Bitmap.fromImg(img.Image image) : w=image.width, h=image.height, size=image.width*image.height, data=Uint8List(image.width*image.height) {
-    for (int i = 0; i < image.length; i++) {
-      int pixel = image[i];
-      num color = 0.2126 * img.getRed(pixel) + 0.7153 * img.getGreen(pixel) + 0.0721 * img.getBlue(pixel);
+    var i=0;
+    for (var pixel in image) {
+      // int pixel = image[i];
+      num color = 0.2126 * pixel.r + 0.7153 * pixel.g + 0.0721 * pixel.b;
       data[i] = (color < 128 ? 1 : 0);
+      i++;
     }
   }
 
