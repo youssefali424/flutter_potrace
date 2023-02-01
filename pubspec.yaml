@@ -6,7 +6,7 @@ homepage: https://github.com/GreenAppers/flutter_potrace
 documentation: https://github.com/GreenAppers/flutter_potrace/wiki
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:

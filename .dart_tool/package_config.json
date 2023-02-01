@@ -107,10 +107,10 @@
       "name": "potrace",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.1"
+      "languageVersion": "2.12"
     }
   ],
-  "generated": "2023-02-01T17:10:54.017920Z",
+  "generated": "2023-02-01T17:57:05.665838Z",
   "generator": "pub",
   "generatorVersion": "2.18.4"
 }
